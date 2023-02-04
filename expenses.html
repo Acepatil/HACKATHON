@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List Of Expenses</title>
+    <title>Expenses</title>
     <style>
         *{
             margin:  0;
@@ -20,7 +20,6 @@
 
         }
         div{
-            /* background-color: blue; */
             margin: 14px;
             padding: 18px;
             display: flex;
@@ -29,7 +28,7 @@
         
         }
         #In,#eb,#wb,#ent,#emi,#mis{
-            background-color: red;
+            background-color: pink;
         }
         nav{
             font-size: x-large;
@@ -56,56 +55,85 @@
             background-color: white;
             text-decoration: none;
         }
+        nav
+        {
+            display: flex;
+            gap: 100px;
+            font-size: larger;
+        }
+        h1{
+            background-image: linear-gradient(red,orange);
+        }
 
 
     </style>
     <link rel="icon" href="Group 3.png" type="image/png">
 </head>
-<body style="background-color: rgb(236, 129, 6);">
+<body style="background-image: linear-gradient(#3e32a8,#e310c7);">
  <h1>This the Way To Change your Life</h1> 
  <nav>
     <a href="howitworks.html" target="_blank">How it works</a>
     <a href="emicalculator.html" target="_blank">EMI Calculator</a>
     <a href="faqs.html" target="_blank">FAQS</a>
 </nav>
-  <form action="">
-    <div id="1">
-        <label for="In"><pre>Salary:              </pre></label>
+  <form onsubmit="func(event)">
+    <div >
+        <label for="In"><pre><b>Income:              </b></pre></label>
         <input type="number" name="Income" id="In">
     </div>
-    </div>
-    <div id="2">
-       <label for="eb">Electricity Bill:</label>
+    <div>
+       <label for="eb"><b>Electricity Bill:</b></label>
        <input type="number" name="Electricity_Bill" id="eb"> 
     </div>
-     <div id="3">  
-       <label for="wb"><pre>Water Bill:       </pre>     </label>
+     <div>  
+       <label for="wb"><pre><b>Water Bill:        </b></pre>     </label>
        <input type="number" name="water_bill" id="wb">
     </div>
-    <div id="4">
-        <label for="ent"><pre>Entertainment: </pre></label>
+    <div >
+        <label for="ent"><pre><b>Entertainment:</b></pre></label>
         <input type="number" name="Entertainment" id="ent">
     </div>
-    <div id="5">    
-        <label for="emi"><pre>EMI:                </pre></label>
+    <div>    
+        <label for="emi"><pre><b>EMI:                 </b></pre></label>
         <input type="number" name="emi" id="emi"><br>
     </div>
-    <div id="6">
-       <label for="mis"><pre>Miscallenous:  </pre></label>
+    <div>
+       <label for="mis"><pre><b>Miscallenous:   </b></pre></label>
        <input type="number" name="Miscallenous" id="mis"><br>
     </div>
-    <div id="7">
-        <input type="submit" value="Submit ">
-        <input type="reset" value="Reset ">
+    <div style="margin: 12px;padding: 20px;align-items: center;">
+        <input type="submit" value="Submit "><pre>    </pre><input type="reset" value="Reset ">
     </div>
        
   </form>
+  <script type="text/javascript">
+        function func(event){
+          event.preventDefault();
+
+          var Income=document.getElementById("In").value;
+          var Electricity_Bill=document.getElementById("eb").value;
+          var Water_Bill=document.getElementById("wb").value;
+          var Entertainment=document.getElementById("ent").value;
+          var EMI=document.getElementById("emi").value;
+          var Miscallenous=document.getElementById("mis").value;
+
+          localStorage.setItem('Is_Income',Income);
+          localStorage.setItem('Is_Electricity_Bill',Electricity_Bill);
+          localStorage.setItem('Is_Water_Bill',Water_Bill);
+          localStorage.setItem('Is_Entertainment',Entertainment);
+          localStorage.setItem('Is_EMI',EMI);
+          localStorage.setItem('Is_Miscallenous',Miscallenous);
+
+            
+        }
+  </script>
   <footer>
+    <nav>
     <a href="frontpage.html" target="_blank">USER INFO</a>
-    <a href="expenses.html" target="_blank">LIST OF EXPENSES</a>
     <a href="howitworks.html" target="_blank">HOW IT WORKS</a>
     <a href="faqs.html" target="_blank">FAQS</a>
     <a href="emicalculator.html" target="_blank">EMI CALCULATOR</a>
+    </nav>
    </footer> 
 </body>
 </html>
