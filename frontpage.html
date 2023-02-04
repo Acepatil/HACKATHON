@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Personal Buget </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body{
+            background: linear-gradient(110deg, rgb(0, 0, 255) 60%,rgba(255, 0, 0, 0.646) 60%);
+            min-height: 100vh;
+            font-size: xx-large;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            margin: 12px;
+            padding: 10px;
+        }  
+    </style>
+    <link rel="icon" href="Group 3.png" type="image/png">
+</head>
+<body>
+<form onsubmit="expenses.html">
+<div>
+    <img src="4.png" alt="Favicon" width="400" height="400">
+</div>
+    <div><label for="name">Name:</label>
+    <input type="text" name="MyName" id="name">
+</div>
+<div>
+    <label for="phone">Contact:</label>
+    <input type="number" name="MyContact" id="phone">
+</div>
+<div>
+    <label for="email">Email:</label>
+    <input type="email" name="MyEmail" id="email">
+</div>
+<div>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</div>
+<div>
+    <a href="expenses.html">
+    <button><pre> DONE                     </pre></button>
+    </div>
+</form>
+
+</a> 
+<script type="text/javascript">
+    function myfunc(event) {
+        event.preventDefault();
+
+        var name=document.getElementById("name").value;
+        var phone=document.getElementById("phone").value;
+        var email=document.getElementById("email").value;
+        var dob=document.getElementById("dob").value;
+
+        localStorage.setItem('Is_name', name);
+        localStorage.setItem('Is_phone', phone);
+        localStorage.setItem('Is_email', email);
+        localStorage.setItem('Is_dob', dob);
+        
+    }
+</script>
+    
+</body>
+</html>
