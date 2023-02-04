@@ -47,10 +47,50 @@
          margin-left:100px;
          cursor: pointer;
       }
+      a:link{
+            color:blue;
+            background-color: white;
+            text-decoration: none;
+        }
+        a:visited{
+            color:violet;
+            background-color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            color:red;
+            background-color: white;
+            text-decoration: none;
+        }
+        a:active{
+            color:green;
+            background-color: white;
+            text-decoration: none;
+        }
+      nav{
+            display: flex;
+            gap: 100px;
+            font-size: x-large;
+      }
+      h2{
+            background-image: linear-gradient(red,orange);
+            background-color: yellow;
+            align-items: center;
+            font-size: xx-large;
+            color: rgb(6, 9, 94);
+            padding: 15px;
+        }
    </style>
    <link rel="icon" href="Group 3.png" type="image/png">
 </head>
 <body style= "background-image:linear-gradient(45deg,#3e32a8,#e310c7);">
+   <h2>Going On Loan Really Benefits You</h2>
+   <nav>
+   <a href="frontpage.html" target="_blank">USER INFO</a>
+        <a href="expenses.html" target="_blank" >LIST OF EXPENSES</a>
+        <a href="howitworks.html" target="_blank">HOW IT WORKS</a>
+        <a href="faqs.html" target="_blank">FAQS</a>
+</nav>
    <div class="Loan_calcualtor">
       <h1>Loan Calculator </h1>
       <p>Loan amount: $
@@ -78,11 +118,5 @@
          document.getElementById("output").innerHTML=emi
       }
    </script>
-   <footer>
-      <a href="frontpage.html" target="_blank">USER INFO</a>
-        <a href="expenses.html" target="_blank" >LIST OF EXPENSES</a>
-        <a href="howitworks.html" target="_blank">HOW IT WORKS</a>
-        <a href="faqs.html" target="_blank">FAQS</a>
-   </footer>
 </body>
 </html>
