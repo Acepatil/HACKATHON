@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    
+   
+    border: none;
+    outline: none;
+    
+}
+.home{
+    background-image: url(abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background.jpg);
+    background-size: cover;
+    
+    background-position: center;
+    /* z-index: -1;  */
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(46, 46, 46);
+    
+    z-index: 1000;
+}
+a.navbar{
+    color: aliceblue;
+}
+.nav{
+    margin: 0 100px;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    
+    
+}
+.nav , .nav_item{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+/* .navbar{
+    margin-right: 100px;
+    margin-top: 30px;
+    text-decoration: none;
+    color: antiquewhite;
+} */
+.nav_item{
+    column-gap: 23px;
+    
+}
+.navlogo{
+    font-size: 30px;
+}
+.navbar:hover{
+    color: rgb(45, 133, 255);
+}
+
+
+.form_container{
+    position: absolute;
+    size: 100%;
+    background-color: rgb(255, 255, 255);
+    /* height: 30%;
+width: 40%; */
+top: 50%;
+left: 50%;
+z-index: 101;
+transform: translate(-50% , -50%);
+padding: 30px;
+border-radius: 12px;
+box-shadow: 20px;
+width: 400px;
+height: 330px;
+/* z-index: 1000; */
+}
+
+.inp{
+    position: relative;
+   margin-top: 20px;
+   height: 90px;
+   width: 100%;
+  
+}
+.form_container h2{
+    font-size: 40px;
+    text-align: center;
+    color: black;
+}
+
+.inp {
+   
+    border-bottom: 2px solid rgb(45, 133, 255);
+    height: 23px;
+    width: 100%;
+    color: black;
+    /* z-index: 1000; */
+   
+}
+.inp:hover{
+    border-bottom: 2.5px solid rgb(18, 43, 77);
+}
+
+.inp input {
+    color: black;
+}
+
+.home{
+    position: relative;
+    height: 100vh;
+    width:100%;
+    
+    
+    }
+        .forgot_pw{
+        font-size: 12px;
+        color: blue;
+        z-index: 1000;
+    }
+    .btn-group{
+         font-size: 12px;
+         margin-top: 12px;
+    }
+
+    .button {
+        
+        margin-top: 19px;
+        padding: 7px;
+        width: 100%;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    background-color: rgb(33, 33, 237);
+    }
+    .bi{
+        color: black;
+        width:  154px;
+      
+    }
